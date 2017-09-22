@@ -18,5 +18,7 @@
 	session.setAttribute("cnt", ++cnt);
 %>
 <h1>cnt : <%= cnt %></h1>															// 세션이 공유되기 때문에서 chrome에서는 누적되고, ie는 다시 최초 호출이다.
+<br>
+<%= request.getHeader("Cookie")  %>
 </body>
 </html>
