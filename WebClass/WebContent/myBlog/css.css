@@ -1,0 +1,29 @@
+#center
+{
+	text-align:center;
+	color: #ffffff;
+}
+#img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width:100%;
+}
+.image
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width:100%;
+}
+#font
+{
+	font-size: 35px;
+	font-family: "OneDirection";
+}
+#normal_font
+{
+	color: #ffffff;
+	font-size: 18px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Join</title>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel = "stylesheet" href = "css.css">
+    <script  src="./js.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <style>
+    	div.container
+    	{
+     		padding-top : 80px;
+    		padding-bottom: 10px;
+    	}
+    </style>
+  </head>
+  
+<body style = "background-color:black">
+  	<img src = "./img/1d.jpg"  class = "image" alt = "One Direction">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id = "font">
+    <li class="nav-item" onmouseover = "menu_over(this);" onmouseout = "menu_out(this);">
+        <a class="nav-link" href="myblog.html" >Main<span class="sr-only">(current)</span></a>
+       <li class="nav-item" onmouseover = "menu_over(this);" onmouseout = "menu_out(this);">
+        <a class="nav-link" href="1D.html" >One Direction</a>
+      </li>
+       <li class="nav-item" onmouseover = "menu_over(this);" onmouseout = "menu_out(this);">
+        <a class="nav-link" href="others.html">Others</a>
+      </li>
+       <li class="nav-item" onmouseover = "menu_over(this);" onmouseout = "menu_out(this);">
+        <a class="nav-link" href = "movies.html">Movies</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class = "container" id = "normal_font">
+	<div><h1>Add Ur Acc Now!</h1></div>
+	<form class="form-inline my-2 my-lg-0" id = "joinForm">
+	<div>
+	<h2>Grade</h2>
+	<h3><input type="radio" name="grade" value="1"  required> 1<br>
+	<input type="radio" name="grade" value="2"  required> 2<br>
+	<input type="radio" name="grade" value="3"  required> 3<br><br></h3>
+	</div>
+	<div>
+	<h2>Class</h2>
+		<select name="list" required>
+			<option value="">--Select--</option>
+			<option value="1_class">1</option>
+			<option value="2_class">2</option>
+			<option value="3_class">3</option>
+			<option value="4_class">4</option>
+			<option value="5_class">5</option>
+			<option value="6_class">6</option>
+		</select>
+	</div>
+	<div>
+	<br><br><h2>Number/ Name</h2>
+	<input class="form-control mr-sm-2" type="text" placeholder="Num" aria-label="Num" id = "num" required><br>
+	<input class="form-control mr-sm-2" type="text" placeholder="Name" aria-label="Name" id = "name" required><br>
+	<button class="btn btn-outline-success my-2 my-sm-0" type="submit"  >Join</button><br><br><br><br><br><br><br>
+	</div>
+	</form>
+</div>
+
+<!-- Join Modal -->
+<div class="modal" id = "joinModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thx!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
