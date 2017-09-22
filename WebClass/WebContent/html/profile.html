@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>												<!-- Cannot use <script> in here; plz use in <body>-->
+<meta charset="UTF-8">
+<title>JS_Profile</title>
+</head>
+
+<body>
+<h1>Profile</h1>
+<p id = "profile">
+</p>
+<script>
+var id = "9421";
+var name = "Harry Styles";
+var age = 23;
+var height = 180.3;
+var hobby = ["Dancing", " Singing"]
+
+console.log(typeof id);
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof height);
+console.log(typeof hobby);
+console.log(typeof "One Direction");
+console.log(document.getElementById("profile"))
+
+document.getElementById("profile").innerHTML =
+	"<ul><li>Grade : " + id + "</li>" + 
+	"<li> Name : " + name + "</li>" +
+	"<li> Age : " + age + " Years</li>" +
+	"<li>Height : " + height + "cm" +
+	"<li>Hobby : " + hobby + "</li></ul>"                <!-- "<li>Hobby : " + hobby[0] + "," + hobby[1] + ", " + hobby[2] + "</li>" -->
+</script>
+</body>
+</html>

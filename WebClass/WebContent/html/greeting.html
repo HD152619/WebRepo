@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS_Greeting</title>
+<script>
+function greeting(nation)
+{
+	if(nation == 'k')
+		{
+		document.getElementById("result").innerHTML = "안녕하세요";
+		}
+	if(nation == 'a')
+	{
+	document.getElementById("result").innerHTML = "Hi";
+	}
+	if(nation == 'c')
+	{
+	document.getElementById("result").innerHTML = "ni hao";
+	}
+}
+</script>
+</head>
+
+<body>
+Greeting Horse of Each Country<br>
+<button onclick = "greeting('k');">Korean</button>
+<button onclick = "greeting('a');">American</button>
+<button onclick = "greeting('c');">Chinese</button>
+<!-- Can put function in here -->
+<p id = "result"></p>
+</body>
+</html>

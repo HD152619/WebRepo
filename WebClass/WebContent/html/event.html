@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event_html</title>
+<style>
+.bgYellow{ background-color : yellow }
+.bgBlue{ background-color : blue }
+.bgWhite{ background-color : white }
+.border { border : 3px solid red }
+</style>
+
+<script>
+function changeColor(color)
+{
+	var c = document.getElementById("container");
+	//c.style.backgroundColor = color;
+	c.style.backgroundColor=color;			// ==     <p id = "container" class = "bgYellow">
+}
+
+function toUpperCase(e)
+{
+	//var e = document.getElementById("word");
+	e.value = e.value.toUpperCase();
+}
+
+function addBorder(e)
+{
+	//var b = document.getElementById("box");
+	//b.style.border = "3px solid red";
+	e.style.border = "3px solid red";
+}
+
+function removeBorder(e)
+{
+	//var c = document.getElementById("box");
+	e.style.border = "";
+}
+</script>
+</head>
+
+<body onload = "alert('WebPage Loaded');">
+<div id = "container">
+	<input type = "radio" name = "color" onclick = "changeColor('blue');">Blue
+	<input type = "radio" name = "color" onclick = "changeColor('orange');">Orange
+	<input type = "radio" name = "color" onclick = "changeColor('white');">White
+	<br>
+	<input type = "text" id = "word" onchange = "toUpperCase();">
+	<br>
+	<div id = "box" onmouseover = "addBorder(this);" onmouseout = "removeBorder(this);">
+	Put Your Mouse Here
+	</div>
+</div>
+</body>
+</html>
