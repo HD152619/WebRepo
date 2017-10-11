@@ -1,27 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-    
-$(document).ready(function()					// if end document reading(ready) -> anonymous function
-  	{
-  		$('#loginForm').submit(function(event)
-  		{
-  			// prevent automatic submit 
-  			event.preventDefault();
-  			
-  			// get id, pw
-  			// document.getElementById("id").value
-  			var id = $('#id').val();
-  			var pwd = $('#pwd').val();
-  			console.log(id, pwd);							// value check
-  			
-  			// sending post to server(ajax)
-  			$.post("/WebClass/login",
-  					{"id" : id, "pwd" : pwd}, 							// "key" : value, "key" : value
-  					function(data)
-  					{
-  						//alert(data.form.id + ' login');
-  						var myModal = $('#myModal');
-  						myModal.modal();
-  						myModal.find('.modal-body').text(data.id + ' login');
-  					});
-  			  	});
-  		});
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="modal" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">ë¡ ê·¸ì ¸ ê²°ê³¼</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+            </div>
+            <div class="modal-body">
+              <p></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
